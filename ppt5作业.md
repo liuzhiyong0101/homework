@@ -1,0 +1,47 @@
+part1
+
+
+溢出：2，3，4中Z
+
+精度误差：7
+
+
+
+part2
+
+
+Method of complements
+
+Complement numbers on an adding machine c. 1910. The smaller numbers, for use when subtracting, are the nines' complement of the larger numbers, which are used when adding.
+In mathematics and computing, the method of complements is a technique used to subtract one number from another using only addition of positive numbers. This method was commonly used in mechanical calculators and is still used in modern computers.
+
+Byte
+
+The byte is a unit of digital information that most commonly consists of eight bits, representing a binary number. Historically, the byte was the number of bits used to encode a single character of text in a computer[1][2] and for this reason it is the smallest addressable unit of memory in many computer architectures. 
+
+Integer (computer science)
+
+Jump to search
+In computer science, an integer is a datum of integral data type, a data type that represents some range of mathematical integers. Integral data types may be of different sizes and may or may not be allowed to contain negative values. Integers are commonly represented in a computer as a group of binary digits (bits). The size of the grouping varies so the set of integer sizes available varies between different types of computers. Computer hardware, including virtual machines, nearly always provide a way to represent a processor register or memory address as an integer. 
+
+Floating point
+
+This article is about the method of representing a number. For the album by John McLaughlin, see Floating Point.
+
+证明：
+
+正数X的第一位数是1，取反后，第一位是0，其余位取反；
+
+-X的第一位是1，其余位和X一样，当取X的反码时，首位仍为1，其余位取反；可以看出X各位取反和-X的反码一样。因此二进制的负数（two‘s complement of X）等于 X 的 ones’ complement  ＋ 1（即，X每位求反加1）
+
+x = -（1*8+7*1）
+
+x=y=1*16+15*1；过程是先将x的值以二进制储存，再把x的值赋给y，再将二进制转化为16进制，而且每四位化为一个16进制数
+
+证明：ox a1a2...an=a1*16^(n-1)+a2*16^(n-2)...+an*16^0
+
+                 =a1*2^(4(n-1))+a2*2^(4(n-2))...an*2^0
+
+NAN
+
+In computing, NaN, standing for not a number, is a numeric data type value representing an undefined or unrepresentable value, especially in floating-point calculations. Systematic use of NaNs was introduced by the IEEE 754 floating-point standard in 1985, along with the representation of other non-finite quantities like infinities. 
