@@ -1,4 +1,4 @@
-# 直接上代码，如下
+
 
 #include<stdio.h> 
 
