@@ -9,17 +9,6 @@ X+M(x)=$$2^n$$<br/>
 
 
 
-证明：<br/>
-设一二进制数X=X<sub>1</sub>X<sub>2</sub>......X<sub>n</sub><br/>
-由负数表示法可得：<br/>
-Negative(X)=2<sup>k</sup>-I<br/>
-Negative(X)=(2<sup>k</sup>-1)-I+1<br/>
-Negative(X)=(2<sup>k-1</sup>+2<sup>k-2</sup>+......+2+1)-X+1<br/>
-2<sup>k-1</sup>+2<sup>k-2</sup>+......+2+1转换为二进制即为111......111(n个1)<br/>
-故(2<sup>k-1</sup>+2<sup>k-2</sup>+......+2+1)-X即为X的每位求反<br/>
-所以二进制的负数等于其每位求反加1
-
-
 
 
 $$I=\sum_{i=1}^n d_i*2^i$$<br/>
