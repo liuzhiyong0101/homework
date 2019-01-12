@@ -1,52 +1,39 @@
+```c
 
-
-#include<stdio.h> 
-
-#include<stdlib.h>
-
-#include<time.h>
-
-#include<windows.h>
-
-
-#define SNAKE_MAX_LENGTH 20
-
-#define SNAKE_HEAD 'H'
-
-#define SNAKE_BODY 'X'
-
-#define BLANK_CELL ' '
-
-#define SNAKE_FOOD '$'
-
-#define WALL_CELL '*'
-
-#define MAXLENTH 50
-
-#define GO_ON 1
-
-#define END 0 
-
-void snake_move(int,int);
-
-int main(){
-
-	int flag=GO_ON;
-
+	#include<stdio.h> 
+	#include<stdlib.h>
+	#include<time.h>
+	#include<windows.h>
+	#define SNAKE_MAX_LENGTH 20
+	#define SNAKE_HEAD 'H'
+	#define SNAKE_BODY 'X'
+	#define BLANK_CELL ' '
+	#define SNAKE_FOOD '$'
+	#define WALL_CELL '*'
+	#define MAXLENTH 50
+	#define GO_ON 1
+	#define END 0 
+	void snake_move(int,int);
+	int main(){
+		int flag=GO_ON;
     int snake_x[MAXLENTH]={1,2,3,4,5};
-	
     int snake_y[MAXLENTH]={1,1,1,1,1};
-	
     int head_x=5,head_y=1;
-	
     int length=4;//length--蛇长度 
-	
     int m=length;//m--坐标个数 
-	
     int i,j,n;
-	
-    char map[12][13]={{"************"},{"*XXXXH     *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"*          *"},{"************"}};
-	
+    char map[12][13]={{"************"},
+					{"*XXXXH     *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"*          *"},
+					{"************"}};
     //产生食物
 	int food_x=5,food_y=5;
 	 map[food_y][food_x]='$';
@@ -304,6 +291,5 @@ int main(){
 		}
 		
 	}
-	
 	return 0;
-}
+	}
